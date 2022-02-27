@@ -9,6 +9,11 @@ const router = new VueRouter({
   mode: 'history',
   routes: [
 		{
+			path: '/',
+			name: 'landing-page',
+			redirect: '/home'
+		},
+		{
 			path: '/home',
 			name: 'home',
 			component: InboundForm
